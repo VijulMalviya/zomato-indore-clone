@@ -3,8 +3,12 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
+  
 }
 
+body{
+  overflow-x: hidden;
+}
 h5{
     margin-bottom: 0;
 }
@@ -115,7 +119,7 @@ a{
   color: grey;
 }
 .popular-cuisines li:hover, .footer li:hover, .top-restaurent-chain li:hover ,.popular-restaurent li:hover{
-  color: grey;
+  color: black;
 }
 
 .popular-cuisines li a:hover, .footer li a:hover, .top-restaurent-chain li a:hover ,.popular-restaurent li a:hover{
@@ -165,4 +169,32 @@ a{
    -ms-transition: cubic-bezier(0.165, 0.84, 0.44, 1);
    -o-transition: cubic-bezier(0.165, 0.84, 0.44, 1);
 }
+
+.nav{
+  background-color: transparent;
+  height: 15vh;
+}
+ .nav .links{
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 5rem;
+  align-items: center;
+}
+.nav .logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav .links p{
+   cursor: pointer;
+}
  
+
+@media only screen and (max-width:767px){
+  .nav .links{
+    padding-right: 2rem;
+  }
+  .nav{
+    height: 10vh;
+  }
+}
